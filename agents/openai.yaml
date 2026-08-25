@@ -1,0 +1,4 @@
+interface:
+  display_name: Japanese Image Layout Translator
+  short_description: Translate Japanese images into Chinese with reference-matched layout
+  default_prompt: Translate the Japanese source image into Chinese and rebuild it using the supplied golden reference image for layout, typography, and spacing.
