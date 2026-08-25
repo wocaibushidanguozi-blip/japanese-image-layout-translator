@@ -1,0 +1,6 @@
+{
+  "input": "input/73.jpg",
+  "reference": "reference/25.jpg",
+  "max_iterations": 4,
+  "expected_status": "blocked_until_executors_are_connected"
+}
