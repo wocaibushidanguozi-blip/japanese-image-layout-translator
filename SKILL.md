@@ -42,6 +42,12 @@ The current repository version provides the dry-run contract only. It is intenti
 8. If validation fails, revise only the affected blocks or layout parameters and rerender. Use at most the configured iteration limit, defaulting to 4. Stop early when all blocking checks pass.
 9. Save the final PNG, the run manifest, the validation report, and intermediate drafts. A failed run must be explicit and must retain its report.
 
+## Optional Sample Experience
+
+The repository contains a compact summary of the analyzed local samples at [references/sample-experiences.md](references/sample-experiences.md). This is optional knowledge, not a mandatory startup dependency. Read it only when the current page resembles a recorded scan type or the user explicitly asks to use the accumulated experience.
+
+For recurring scan types, inspect only the matching profile in `references/layout-profiles/` before selecting OCR and layout defaults. Treat profiles as priors, not as replacements for the current reference image. A current reference always overrides a profile when the two disagree. Do not load every profile for every run.
+
 ## Default Layout Policy
 
 Use these as defaults only when the reference analysis does not provide a better value:
@@ -81,4 +87,3 @@ final.png           # produced only after a passing validation
 ```
 
 Never include credentials, raw API keys, or private source material in a published Skill repository.
-
